@@ -1,0 +1,45 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "listadetarefas",
+            "request": "launch",
+            "mainClass": "listatarefas.listadetarefas",
+            "projectName": "lista de tarefas_809e6267",
+            "vmArgs": "--enable-native-access=javafx.graphics --module-path C:\\Users\\mateu\\Downloads\\openjfx-24.0.1_windows-x64_bin-sdk\\javafx-sdk-24.0.1\\lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "listadetarefas",
+            "request": "launch",
+            "mainClass": "listatarefas.listadetarefas",
+            "projectName": "projeto java_20403810",
+            "vmArgs": "--enable-native-access=javafx.graphics --module-path C:\\Users\\mateu\\Downloads\\openjfx-24.0.1_windows-x64_bin-sdk\\javafx-sdk-24.0.1\\lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "listatarefas.Main",
+            "projectName": "projeto java_20403810",
+            "vmArgs": "--enable-native-access=javafx.graphics --module-path C:\\Users\\mateu\\Downloads\\openjfx-24.0.1_windows-x64_bin-sdk\\javafx-sdk-24.0.1\\lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "projeto java_20403810"
+        }
+    ]
+}
