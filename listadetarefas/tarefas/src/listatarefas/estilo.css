@@ -1,33 +1,82 @@
+/* estilo.css */
+
 .root {
-    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     -fx-background-color: #f5f5f5;
 }
 
+/* Campo de texto para adicionar tarefa */
 .text-field {
-    -fx-pref-width: 200px;
+    -fx-pref-width: 250px;
     -fx-font-size: 14px;
     -fx-background-color: white;
     -fx-border-color: #cccccc;
     -fx-border-radius: 5px;
     -fx-background-radius: 5px;
+    -fx-padding: 5 10 5 10;
+    -fx-focus-color: #4CAF50;
 }
 
+/* Botões */
 .button {
     -fx-background-color: #4CAF50;
     -fx-text-fill: white;
     -fx-font-weight: bold;
     -fx-padding: 8 15 8 15;
     -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 2,0,0,1 );
+    -fx-transition: background-color 0.3s ease;
 }
 
 .button:hover {
     -fx-background-color: #45a049;
 }
 
+/* ListView */
 .list-view {
     -fx-background-color: white;
     -fx-border-color: #cccccc;
     -fx-border-radius: 5px;
     -fx-background-radius: 5px;
     -fx-padding: 5px;
+    -fx-cell-size: 30px;
 }
+
+/* Estilo para células da lista */
+.list-cell {
+    -fx-font-size: 14px;
+}
+
+/* Texto riscado para tarefas concluídas */
+.list-cell:filled:selected {
+    -fx-background-color: #a8d5a8; /* cor de fundo para itens selecionados */
+}
+
+.list-cell:filled:selected .text {
+    -fx-fill: white;
+}
+
+/* Estilo para texto riscado (tarefas concluídas) */
+.list-cell .text {
+    -fx-strikethrough: false;
+    -fx-text-fill: black;
+}
+
+.list-cell .text.riscado {
+    -fx-strikethrough: true;
+    -fx-text-fill: gray;
+}
+
+/* Layout HBox para espaçamento */
+.hbox {
+    -fx-spacing: 10px;
+    -fx-alignment: center-left;
+}
+
+/* Layout VBox */
+.vbox {
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
+
